@@ -13,10 +13,15 @@ pipeline {
     stages {
         stage('Demo') {
             steps {
-                //echo 'Hello world'
-                nodeBuild name: 'tapa'
+                readProperties this
+                echo 'Hello world'
+               
                 //notify "type:'slack' message:'a slack notification'"
             }
+        }
+        if(env.techStack == "node")
+        {
+             nodeBuild name: 'tapa'
         }
     }
 }
