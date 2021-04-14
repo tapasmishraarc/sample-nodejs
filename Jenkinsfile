@@ -15,10 +15,10 @@ pipeline {
             steps {
                 readProperties this
                 echo 'Hello world'
-               if(env.techStack=="node")
-                {
-                     nodeBuild name: 'tapa'
-                }
+                echo env.techStack
+               // if(env.techStack=="node"){
+                 // nodeBuild name: 'tapa'
+                //}
                 //notify "type:'slack' message:'a slack notification'"
             }
         }
