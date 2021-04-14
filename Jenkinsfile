@@ -14,8 +14,8 @@ pipeline {
         stage('Demo') {
             steps {
                 readProperties this
-                echo 'Hello world'
-                echo env.techStack
+                //echo 'Hello world'
+                //echo env.techStack
                // if(env.techStack=="node"){
                  // nodeBuild name: 'tapa'
                 //}
