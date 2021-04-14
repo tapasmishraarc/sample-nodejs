@@ -7,7 +7,21 @@ library identifier: 'mylibraryname@master',
       remote: 'https://github.com/tapasmishraarc/jenkins-shared-library.git'
 ])
 
-pipeline {
+node
+{
+    stage('Demo') {
+        //git url: "https://github.com/tapasmishraarc/sample-nodejs"
+                readProperties this
+                //echo 'Hello world'
+                //echo env.techStack
+               // if(env.techStack=="node"){
+                 // nodeBuild name: 'tapa'
+                //}
+                //notify "type:'slack' message:'a slack notification'"
+        }
+        
+}
+/*pipeline {
     agent any
     tools {nodejs "nodejs"}
     stages {
@@ -24,4 +38,4 @@ pipeline {
         }
         
     }
-}
+}*/
