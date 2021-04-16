@@ -1,4 +1,4 @@
-library identifier: 'mylibraryname@master',
+library identifier: 'test@master',
     //'master' refers to a valid git-ref
     //'mylibraryname' can be any name you like
     retriever: modernSCM([
