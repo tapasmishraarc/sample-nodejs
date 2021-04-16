@@ -1,11 +1,4 @@
-library identifier: 'test@master',
-    //'master' refers to a valid git-ref
-    //'mylibraryname' can be any name you like
-    retriever: modernSCM([
-      $class: 'GitSCMSource',
-      //credentialsId: 'your-credentials-id',
-      remote: 'https://github.com/tapasmishraarc/jenkins-shared-library.git'
-])
+@Library('my-shared-library')
 
 node
 {
