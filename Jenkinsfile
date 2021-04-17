@@ -5,7 +5,8 @@ node
     
     stage('Demo') {
         
-                readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
+        readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
+        echo "${env.APP_NAME}"
                
         }
         
