@@ -2,7 +2,9 @@
 
 node
 {
-    
+    tools {
+    nodejs "nodejs" 
+    }
     stage('Demo') {
         
         readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
