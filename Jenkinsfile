@@ -5,7 +5,7 @@ node
     
     stage('Demo') {
         
-                readProperties this
+                readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git'
                
         }
         
