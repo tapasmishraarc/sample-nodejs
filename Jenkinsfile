@@ -11,8 +11,13 @@ pipeline {
     stage('Example') {
       steps {
         script {
+          
         readProperties "${params.url}", this
         echo "${env.APP_NAME}"
+          if(env.techStack == "node")
+          {
+            nodeBuild name: "tapas"
+          }
         }
         
       }
