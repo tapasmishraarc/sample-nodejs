@@ -7,7 +7,7 @@ node
         
         readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
         echo "${env.APP_NAME}"
-        echo "${this.url}"
+        echo "${this.GitSCM}"
                
         }
         
