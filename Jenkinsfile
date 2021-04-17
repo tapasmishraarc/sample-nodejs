@@ -1,12 +1,10 @@
 @Library('my-shared-library@master') _
- tools {
-    nodejs "nodejs" 
-    }
+
 node
 {
    
     stage('Demo') {
-        
+         tools { nodejs "nodejs"}
         readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
         echo "${env.APP_NAME}"
        
