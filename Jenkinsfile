@@ -2,9 +2,9 @@
 
 node
 {
-   
+   tools { nodejs "nodejs"}
     stage('Demo') {
-         tools { nodejs "nodejs"}
+         
         readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
         echo "${env.APP_NAME}"
        
