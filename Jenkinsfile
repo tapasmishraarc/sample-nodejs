@@ -16,7 +16,7 @@ pipeline {
         echo "${env.APP_NAME}"
           if(env.techStack == "node")
           {
-            nodeBuild name: "tapas"
+            nodeBuild name: "XXXX"
           }
         }
         
