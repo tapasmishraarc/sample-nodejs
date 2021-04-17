@@ -1,5 +1,5 @@
-APP NAME: 'test'
-MS NAME: 'webapp'
+APP_NAME: 'test'
+MS_NAME: 'webapp'
 BRANCH: 'master'
 GIT_SOURCE_URL: 'https://github.com/tapasmishraarc/sample-nodejs.git'
 GIT_CREDENTIALS: 'SCR_CRED'
