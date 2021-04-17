@@ -1,10 +1,13 @@
 @Library('my-shared-library@master') _
 
-node
-{
-   
-    stage('Demo') {
-         
+pipeline {
+  agent any
+ 
+  tools {nodejs "node"}
+ 
+  stages {
+    stage('Example') {
+      steps {
         readProperties 'https://github.com/tapasmishraarc/sample-nodejs.git', this
         echo "${env.APP_NAME}"
        
@@ -12,7 +15,8 @@ node
         {
             nodeBuild name:"tapas"
         }
-               
-        }
-        
+      }
+    }
+  }
 }
+
