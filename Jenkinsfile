@@ -10,9 +10,10 @@ pipeline {
   stages {
     stage('Example') {
       steps {
+        script {
         readProperties "${params.url}", this
         echo "${env.APP_NAME}"
-       
+        }
         
       }
     }
