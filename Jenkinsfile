@@ -14,10 +14,7 @@ pipeline {
           
         readProperties "${params.url}", this
         echo "${env.APP_NAME}"
-          if(env.techStack == "node")
-          {
-            nodeBuild name: "XXXX"
-          }
+         build this
         }
         
       }
