@@ -8,7 +8,7 @@ pipeline {
         string(name: 'url', defaultValue: 'https://github.com/tapasmishraarc/sample-nodejs.git', description: 'My application url')
     }
   stages {
-    stage('Example') {
+    stage('CI-Pipeline') {
       steps {
         script {
           
