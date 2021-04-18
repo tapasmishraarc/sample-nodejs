@@ -5,7 +5,7 @@ pipeline {
  
   tools {nodejs "nodejs"}
   parameters {
-        string(name: 'url', defaultValue: 'https://github.com/tapasmishraarc/sample-nodejs.git', description: 'Who should I say hello to?')
+        string(name: 'url', defaultValue: 'https://github.com/tapasmishraarc/sample-nodejs.git', description: 'My nodejs url')
     }
   stages {
     stage('Example') {
