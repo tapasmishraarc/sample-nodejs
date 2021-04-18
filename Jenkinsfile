@@ -12,9 +12,9 @@ pipeline {
       steps {
         script {
           
-        readProperties "${params.url}", this
+        //readProperties "${params.url}", this
         echo "${env.APP_NAME}"
-         build this
+         build  "${params.url}", this
         }
         
       }
