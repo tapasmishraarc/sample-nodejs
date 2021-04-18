@@ -5,7 +5,7 @@ pipeline {
  
   tools {nodejs "nodejs"}
   parameters {
-        string(name: 'url', defaultValue: 'https://github.com/tapasmishraarc/sample-nodejs.git', description: 'My nodejs url')
+        string(name: 'url', defaultValue: 'https://github.com/tapasmishraarc/sample-nodejs.git', description: 'My application url')
     }
   stages {
     stage('Example') {
